@@ -63,22 +63,6 @@ Theta2_grad = zeros(size(Theta2));
 %
 
 
-% X=[ones(m, 1) X];
-% a1 = X;
-% z2 = a1*Theta1';
-% a2 = sigmoid(z2);
-% a2 = [ones(m , 1)  a2];
-% a3 = sigmoid(a2*Theta2');
-% 
-% R=eye(num_labels)
-% ry = R(y,:);
-% 
-% cost = ry.*log(a3) + (1 - ry).*log(1 - a3);
-% J = -sum(sum(cost,2)) / m;
-% 
-% reg = sum(sum(Theta1(:,2:end).^2)) + sum(sum(Theta2(: , 2:end).^2));
-% 
-% J = J + lambda/(2*m)*reg;
 
 
 X=[ones(m, 1) X];
